@@ -14,8 +14,6 @@ def setMin():
     _type = 'min'
     
 
-
-
 def drawItems(heap):
     k = 0
     line_y = 60
@@ -57,10 +55,6 @@ def drawItems(heap):
             cv.create_line(l,locs[right],fill='green')
 
 
-
-
-
-
 def removemin():
     cv.delete('all')
 
@@ -72,8 +66,7 @@ def removemin():
 
     drawItems(globalHeap)
 
-# functions go here
-# loooooooooooooooool
+
 def add_numbers():
     l = ent.get().split(',')
     res  = []
@@ -88,20 +81,7 @@ def add_numbers():
     else:
         globalHeap = MaxHeap(res)
 
-    # print(globalHeap.heap)
-
     drawItems(globalHeap)
-
-
-
-
-    
-
-    
-
-
-    # python magic
-    
 
 
 
@@ -110,11 +90,8 @@ HEIGHT = 600
 WIDTH = 1000
 
 
-
 _type = None
 globalHeap = None
-
-
 
 
 # ok step 1: we need a window
@@ -134,12 +111,6 @@ removeMin = Button(cv,text=f'Remove Top',font=('times new roman',17),command=rem
 removeMin.place(relx=0.6,rely=0.9)
 
 
-
-# yarin are u ready for python magic????????????
-# this is called annonymous function
-
-
-# L0L zohar
 MIN = Radiobutton(cv,text='Minimum heap',value=1,command=setMin)
 MAX = Radiobutton(cv,text='Maximum heap',value=2,command=setMax)
 

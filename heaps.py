@@ -55,7 +55,6 @@ class Minheap:
         self.heapifyUp(self.size-1)
 
 
-# by all means take control
 class MaxHeap:
     def __init__(self,array):
         self.heap = array
